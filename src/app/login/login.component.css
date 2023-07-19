@@ -148,3 +148,27 @@
 .card{
     height: 70vh
 }
+
+
+.header{
+
+  position: relative;
+  width:100px;
+
+}
+
+
+.topleft {
+  position: absolute;
+  top: 1 ;
+  left: 1 ;
+  font-size: 18px;
+}
+
+.logo
+{
+ width: 100px ;
+  height: auto;
+  
+}
+

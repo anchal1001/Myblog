@@ -28,7 +28,7 @@ export class LoginComponent {
      
       "password": this.password
     };
-    this.http.post("http://localhost:8085/api/login",bodyData,{responseType: 'text'}).subscribe((resultData: any)=>
+    this.http.post("http://localhost:8085/api/login",bodyData,{responseType: 'json'}).subscribe((resultData: any)=>
     {
       console.log(resultData);
       alert("registered successfully")
