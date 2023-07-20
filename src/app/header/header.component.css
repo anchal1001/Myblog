@@ -1,0 +1,28 @@
+.header{
+
+    position: relative;
+    width:100vw;
+  
+  }
+
+.topleft {
+    position: absolute;
+    top: 1 ;
+    left: 1 ;
+    font-size: 18px;
+    margin-right: 700vh;
+  }
+  
+  .logo
+  {
+  
+    max-height: 100%;
+    
+  }
+  /* .search
+  {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+  }
+   */

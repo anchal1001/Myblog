@@ -150,12 +150,7 @@
 }
 
 
-.header{
 
-  position: relative;
-  width:100px;
-
-}
 
 
 .topleft {
@@ -163,12 +158,13 @@
   top: 1 ;
   left: 1 ;
   font-size: 18px;
+  margin-right: 700vh;
 }
 
 .logo
 {
- width: 100px ;
-  height: auto;
+
+  max-height: 100%;
   
 }
 

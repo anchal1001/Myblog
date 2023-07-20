@@ -28,16 +28,16 @@ export class LoginComponent {
      
       "password": this.password
     };
-    this.http.post("http://localhost:8085/api/login",bodyData,{responseType: 'json'}).subscribe((resultData: any)=>
+    this.http.post("http://localhost:8080/blog/user/login",bodyData,{responseType: 'json'}).subscribe((resultData: any)=>
     {
       console.log(resultData);
       alert("registered successfully")
     });
   }
-  login()
-  {
-   this.router.navigateByUrl('/login');
-  }
+   login()
+   {
+    this.router.navigateByUrl('/login');
+   }
 
 
 }

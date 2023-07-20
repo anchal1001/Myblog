@@ -2,11 +2,7 @@
 
 
 body{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+
   background: image-set(url('./app/login/bgimage.jpg')) ;
 
  

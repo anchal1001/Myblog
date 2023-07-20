@@ -1,47 +1,49 @@
-<div class="header">
-  <img src= "assets/logo.jpg" class="logo" alt="logo" />
-  
-</div>
-<div class="topleft" >
-<h1>Myblog</h1>
-</div>
+<app-header></app-header>
+
+
 <div class="container">
-    <div class="title">Registration</div>
-    <div class="content">
-      <form action="#">
-        <div class="user-details">
-          <div class="input-box">
-            <span class="details">First Name</span>
-            <input type="text" [(ngModel)]="firstName" [ngModelOptions]="{standalone:true}" placeholder="Enter your name" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Last Name</span>
-            <input type="text" [(ngModel)]="lastname" [ngModelOptions]="{standalone:true}"placeholder="Enter your username" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Email</span>
-            <input type="text"[(ngModel)]="email" [ngModelOptions]="{standalone:true}" placeholder="Enter your email" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Phone Number</span>
-            <input type="text" [(ngModel)]="phonenumber" [ngModelOptions]="{standalone:true}"placeholder="Enter your number" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Password</span>
-            <input type="password"[(ngModel)]="password" [ngModelOptions]="{standalone:true}" placeholder="Enter your password" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Confirm Password</span>
-            <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone:true}" placeholder="Confirm your password" required>
-          </div>
+  <div class="title">Registration</div>
+  <div class="content">
+    <form action="#">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">First Name</span>
+          <input type="text" [(ngModel)]="firstName" [ngModelOptions]="{standalone:true}" placeholder="Enter your name"
+            required>
         </div>
-        <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
-          <span class="gender-title">Gender</span>
-          <div class="category">
-            <label for="dot-1">
+        <div class="input-box">
+          <span class="details">Last Name</span>
+          <input type="text" [(ngModel)]="lastname" [ngModelOptions]="{standalone:true}"
+            placeholder="Enter your username" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input type="text" [(ngModel)]="email" [ngModelOptions]="{standalone:true}" placeholder="Enter your email"
+            required>
+        </div>
+        <div class="input-box">
+          <span class="details">Phone Number</span>
+          <input type="text" [(ngModel)]="phonenumber" [ngModelOptions]="{standalone:true}"
+            placeholder="Enter your number" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Password</span>
+          <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone:true}"
+            placeholder="Enter your password" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Confirm Password</span>
+          <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone:true}"
+            placeholder="Confirm your password" required>
+        </div>
+      </div>
+      <div class="gender-details">
+        <input type="radio" name="gender" id="dot-1">
+        <input type="radio" name="gender" id="dot-2">
+        <input type="radio" name="gender" id="dot-3">
+        <span class="gender-title">Gender</span>
+        <div class="category">
+          <label for="dot-1">
             <span class="dot one"></span>
             <span class="gender">Male</span>
           </label>
@@ -52,30 +54,20 @@
           <label for="dot-3">
             <span class="dot three"></span>
             <span class="gender">Prefer not to say</span>
-            </label>
-          </div>
+          </label>
         </div>
-        <div class="button">
-          <input type="submit" (click)="save()" value="Register">
-        </div>
+      </div>
+      <div class="button">
+        <input type="submit" (click)="save()" value="Register">
+      </div>
 
-        <div class="container signin">
-            <p>Already have an account? <a href="/login">login </a>.</p>
-          </div>
-      </form>
-    </div>
+      <div class="container signin">
+        <p>Already have an account? <a href="/login">login </a></p>
+      </div>
+    </form>
   </div>
-  <div>
-    <a class="inline-block pl-2 hover:text-white" href="/">My blogs © 2023</a>
-    </div>
-    <footer>
-      
-      <p><a href="mailto:helpblog@Myblog.com">helpblog@Myblog.com</a></p>
-      <a class="inline-block pl-2 hover:text-white" href="/">My blogs © 2023</a>
-    </footer>
-    <div class="topnav">
-     
-      <input type="text" placeholder="Find blogs..">
-    </div>
+</div>
+<div>
+  <a class="inline-block pl-2 hover:text-white" href="/">My blogs © 2023</a>
+</div>
 
-  

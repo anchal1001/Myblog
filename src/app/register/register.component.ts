@@ -13,6 +13,7 @@ export class RegisterComponent {
   lastname: string ="";
   password : string ="";
   email : string = "";
+  
 
   constructor(private http:HttpClient,private router:Router)
   {
@@ -28,7 +29,7 @@ export class RegisterComponent {
       "firstName" : this.firstName,
       "password": this.password
     };
-    this.http.post("http://localhost:8085/api/register",bodyData,{responseType: 'text'}).subscribe((resultData: any)=>
+    this.http.post("http://localhost:8080/blog/user/login",bodyData,{responseType: 'text'}).subscribe((resultData: any)=>
     {
       console.log(resultData);
       alert("registered successfully")
