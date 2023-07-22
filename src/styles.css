@@ -1,3 +1,10 @@
 body{
-  background: image-set(url('./app/login/bgimage.jpg')) ;
+  background: image-set(url('../src/assets/hh.jpeg')) ;
+  /* background-color: aquamarine; */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

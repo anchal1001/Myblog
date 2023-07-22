@@ -2,39 +2,39 @@
 
 
 <div class="container">
+
   <div class="title">Registration</div>
   <div class="content">
     <form action="#">
       <div class="user-details">
         <div class="input-box">
           <span class="details">First Name</span>
-          <input type="text" [(ngModel)]="firstName" [ngModelOptions]="{standalone:true}" placeholder="Enter your name"
+          <input type="text" [(ngModel)]="register.username" [ngModelOptions]="{standalone:true}" placeholder="Enter your name"
             required>
         </div>
         <div class="input-box">
           <span class="details">Last Name</span>
-          <input type="text" [(ngModel)]="lastname" [ngModelOptions]="{standalone:true}"
-            placeholder="Enter your username" required>
+          <input type="text" 
+            placeholder="Enter your username" >
         </div>
         <div class="input-box">
           <span class="details">Email</span>
-          <input type="text" [(ngModel)]="email" [ngModelOptions]="{standalone:true}" placeholder="Enter your email"
+          <input type="text" [(ngModel)]="register.email" [ngModelOptions]="{standalone:true}" placeholder="Enter your email"
             required>
         </div>
         <div class="input-box">
           <span class="details">Phone Number</span>
-          <input type="text" [(ngModel)]="phonenumber" [ngModelOptions]="{standalone:true}"
-            placeholder="Enter your number" required>
+          <input type="text" 
+            placeholder="Enter your number" >
         </div>
         <div class="input-box">
           <span class="details">Password</span>
-          <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone:true}"
+          <input type="password" [(ngModel)]="register.password" [ngModelOptions]="{standalone:true}"
             placeholder="Enter your password" required>
         </div>
         <div class="input-box">
           <span class="details">Confirm Password</span>
-          <input type="password" [(ngModel)]="cpassword" [ngModelOptions]="{standalone:true}"
-            placeholder="Confirm your password" required>
+          <input type="password"             placeholder="Confirm your password" >
         </div>
       </div>
       <div class="gender-details">

@@ -1,50 +1,55 @@
-<app-header></app-header>
+<div class="wrap">
+  <app-header></app-header>
 
-<div class="container">
+  <div class="container">
     <div class="title">login</div>
     <div class="content">
       <form action="#">
         <div class="user-details">
-          
-          
+
+
           <div class="input-box">
             <span class="details">Email</span>
             <input type="text" placeholder="Enter your email" required>
           </div>
-          
+
           <div class="input-box">
             <span class="details">Password</span>
             <input type="password" placeholder="Enter your password" required>
-        
-        </div>
+
+          </div>
           <div class="button">
-            <input type="submit"  value="login" >
+            <input type="submit" value="login">
           </div>
           <div class="regf">
             <p class="">Not have an account? <a href="/register" onclick={registerHandler}>register</a></p>
-             
-            </div>
-            <a href="/userpanel">userpanel</a>
-      
-            <app-footer></app-footer>
+
+          </div>
+          <a href="/userpanel">userpanel</a>
+
+        </div>
+      </form>
     </div>
-     
-    
-   <script>
-      function auth()
-      var email =document.getElementById("email").value;
-      var password =document.getElementById("password").value;
-      if(email=='admin@gmail.com'&& password =="admin123"){
-        window.location.assign("/home");
-        alert("login successfull");
+  </div>
+  <app-footer></app-footer>
+</div>
 
-      }
-      else {
-        alert("invalid information ");
-        return;gi
-      }
-      const registerHandler=()=>{
 
-      }
-    </script>
-   
+
+<script>
+  function auth()
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  if (email == 'admin@gmail.com' && password == "admin123") {
+    window.location.assign("/home");
+    alert("login successfull");
+
+  }
+  else {
+    alert("invalid information ");
+    return; gi
+  }
+  const registerHandler = () => {
+
+  }
+</script>

@@ -12,7 +12,11 @@ import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { UserpanelComponent } from './userpanel/userpanel.component';
+import { MypostComponent } from './mypost/mypost.component';
+import { ReadpostComponent } from './readpost/readpost.component';
+import { UserHComponent } from './user-h/user-h.component';
+
+
 
 
 
@@ -25,7 +29,11 @@ import { UserpanelComponent } from './userpanel/userpanel.component';
     HomeComponent,
         HeaderComponent,
         FooterComponent,
-        UserpanelComponent,
+        MypostComponent,
+        ReadpostComponent,
+        UserHComponent,
+  
+        
   
   ],
   imports: [

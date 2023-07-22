@@ -1,6 +1,10 @@
-import { HttpClient } from '@angular/common/http';
+// import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { Router, Routes } from '@angular/router';
+import { Router } from '@angular/router';
+// import { RegisterPayload } from '../register-payload';
+import { AuthService } from '../auth.service';
+import { HttpClient } from '@angular/common/http';
+import { RegisterPayload } from '../RegisterPayload';
 
 @Component({
   selector: 'app-register',
@@ -8,39 +12,37 @@ import { Router, Routes } from '@angular/router';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  phonenumber: string ="";
-  firstName: string ="";
-  lastname: string ="";
-  password : string ="";
-  cpassword: string ="";
-  email : string = "";
+    // id: Number;
+    username: string ="";
+    email: string ="";
+    password: string ="";
 
-  
 
-  constructor(private http:HttpClient,private router:Router)
+register : RegisterPayload =new RegisterPayload()
+  constructor(private http: HttpClient, private router: Router,private authService: AuthService )
   {
 
   }
-
   save()
   {
+    console.log(this.register);
+    //this.authService.registerUser(this.register).subscribe();
     let bodyData = {
-      
-      "Email": this.email,
-      "lastname": this.lastname,
-      "firstName" : this.firstName,
-      "password": this.password
+      "username" : this.username,
+      "email" : this.email,
+      "password" : this.password
     };
-    this.http.post("http://localhost:8080/blog/user/login",bodyData,{responseType: 'text'}).subscribe((resultData: any)=>
+
+    this.http.post("http://localhost:6969/myblog/user/register",this.register,{responseType: 'text'}).subscribe((resultData: any)=>
     {
-      console.log(resultData);
-      alert("registered successfully")
+      this.register.id=resultData
+      console.log(this.register);
+      console.log('register success');
+      // this.router.navigateByUrl('/auth/register-success');
+    },error => {
+      console.log('register failed');
+      alert('Register Failed');
     });
   }
-  login()
-  {
-   this.router.navigateByUrl('/login');
-  }
-
 
 }
