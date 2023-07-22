@@ -1,0 +1,30 @@
+/* Styling for the header section */
+header {
+    background-size: cover;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for the login and signup links */
+.login-signup {
+    display: flex;
+    align-items: center;
+}
+
+.login-signup a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Styling for the main content area */
+main {
+    padding: 20px;
+}
+
+.img{
+    background-size: cover;
+    background-position: center;
+}

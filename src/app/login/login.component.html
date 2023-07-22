@@ -20,22 +20,16 @@
           <div class="button">
             <input type="submit"  value="login" >
           </div>
-          <div class="container signin">
-            <p>Not have an account? <a href="/register">register</a></p>
+          <div class="regf">
+            <p class="">Not have an account? <a href="/register" onclick={registerHandler}>register</a></p>
              
             </div>
-            
+            <a href="/userpanel">userpanel</a>
       
-       
+            <app-footer></app-footer>
     </div>
-    <div>
-    <a class="inline-block pl-2 hover:text-white" href="/">My blogs © 2023</a>
-    </div>
-    <footer>
-      
-      <p><a href="mailto:helpblog@Myblog.com">helpblog@Myblog.com</a></p>
-      <a class="inline-block pl-2 hover:text-white" href="/">My blogs © 2023</a>
-    </footer>
+     
+    
    <script>
       function auth()
       var email =document.getElementById("email").value;
@@ -47,7 +41,10 @@
       }
       else {
         alert("invalid information ");
-        return;
+        return;gi
+      }
+      const registerHandler=()=>{
+
       }
     </script>
    
