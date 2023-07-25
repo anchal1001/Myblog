@@ -1,6 +1,13 @@
-footer{
-    width: 100%;
-    padding: 48px;
-    background-color: white;
-    
+.footer{
+    width: 100vw;
+    padding: 30px;
+    background-color: #903564;
+
+    display: flex;
+    margin-right: 0;
 }
+
+.help{
+    margin-right: 5vw;
+}
+

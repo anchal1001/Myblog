@@ -33,12 +33,12 @@ register : RegisterPayload =new RegisterPayload()
       "password" : this.password
     };
 
-    this.http.post("http://localhost:6969/myblog/user/register",this.register,{responseType: 'text'}).subscribe((resultData: any)=>
+    this.http.post("http://localhost:8888/blog/user/register",this.register,{responseType: 'text'}).subscribe((resultData: any)=>
     {
       this.register.id=resultData
       console.log(this.register);
       console.log('register success');
-      // this.router.navigateByUrl('/auth/register-success');
+      this.router.navigateByUrl('/auth/register-success');
     },error => {
       console.log('register failed');
       alert('Register Failed');

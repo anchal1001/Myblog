@@ -1,0 +1,21 @@
+@import '../../../node_modules/font-awesome/css/font-awesome.css';
+
+.bodie{
+    margin-left: 5vw;
+}
+
+.container
+{
+    background-color: blanchedalmond;
+    width: 90vw;
+    height: 90vh;
+    align-items: center;
+}
+
+.footer{
+    bottom: 0; 
+    position: fixed;
+}
+h3{
+    colour:rgb(85, 128, 36);
+}

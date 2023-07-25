@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 
 import { RegisterComponent } from './register/register.component'; 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
@@ -17,7 +17,8 @@ import { ReadpostComponent } from './readpost/readpost.component';
 import { UserHComponent } from './user-h/user-h.component';
 
 
-
+import { AngularEditorModule } from '@kolkov/angular-editor';
+import { AddpostComponent } from './addpost/addpost.component';
 
 
 @NgModule({
@@ -33,13 +34,16 @@ import { UserHComponent } from './user-h/user-h.component';
         ReadpostComponent,
         UserHComponent,
   
-        
+        AddpostComponent
   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule ,
-    HttpClientModule],
+    AppRoutingModule,FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    AngularEditorModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
