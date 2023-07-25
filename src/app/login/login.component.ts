@@ -34,7 +34,6 @@ export class LoginComponent {
                 {
               
                   alert("username not exits");
-            
          
                 }
                 else if(resultData.message=="Login Failed"||resultData.message=="password Not Match"){
